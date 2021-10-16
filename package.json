@@ -1,6 +1,6 @@
 {
-  "name": "examples2",
-  "version": "0.0.0",
+  "name": "eylab-examples",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
