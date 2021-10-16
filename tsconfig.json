@@ -1,11 +1,10 @@
 {
   "extends": "@tsconfig/svelte/tsconfig.json",
-  "include": ["src", "types"],
+  "include": ["src", "types", "src/**/*.{ts,svelte}"],
   "compilerOptions": {
     "module": "esnext",
     "moduleResolution": "node",
     "jsx": "preserve",
-    "baseUrl": "./",
     /* paths - import rewriting/resolving */
     "paths": {
       // If you configured any Snowpack aliases, add them here.
@@ -18,7 +17,7 @@
     /* Additional Options */
     "strict": true,
     "skipLibCheck": true,
-    "types": ["mocha", "snowpack-env"],
+    "types": ["svelte", "mocha", "snowpack-env"],
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "useDefineForClassFields": true,
