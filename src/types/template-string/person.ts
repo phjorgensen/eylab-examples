@@ -1,4 +1,4 @@
-export type Item = {
+export type Person = {
   id: number;
   firstName: string;
   surname: string;
