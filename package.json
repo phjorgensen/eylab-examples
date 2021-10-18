@@ -6,18 +6,25 @@
     "dev": "vite",
     "build": "vite build --base /examples/ --mode prod",
     "serve": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "test": "jest src",
+    "test:watch": "jest run test --watch"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.11",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/svelte": "^3.0.3",
     "@tsconfig/svelte": "^2.0.1",
     "@types/date-fns": "^2.6.0",
     "autoprefixer": "^10.3.7",
+    "jest": "^27.3.0",
     "postcss": "^8.3.9",
     "svelte": "^3.37.0",
     "svelte-check": "^2.1.0",
+    "svelte-jester": "^2.1.5",
     "svelte-preprocess": "^4.7.2",
     "tailwindcss": "^2.2.17",
+    "ts-jest": "^27.0.7",
     "tslib": "^2.2.0",
     "typescript": "^4.3.2",
     "vite": "^2.6.4"
